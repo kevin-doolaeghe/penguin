@@ -1,4 +1,4 @@
-# Chrome OS // Initialisation du conteneur 'penguin'
+# Chrome OS | Initialisation du conteneur `penguin`
 
 ## Auteur
 
