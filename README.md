@@ -12,13 +12,14 @@ sudo apt update
 sudo apt upgrade
 ```
 
-* Modifier le fichier `/etc/apt/sources.list` :
+* Ajouter les sources `contrib` et `non-free` pour les dépôts :
 ```
 sudo apt install software-properties-common
 sudo add-apt-repository contrib
 sudo add-apt-repository non-free
 sudo apt update
 ```
+Il est également possible de modifier le fichier `/etc/apt/sources.list` puis d'ajouter manuellement les paramètres `contrib` et `non-free`.
 
 * Installer les paquets de base :
 ```
