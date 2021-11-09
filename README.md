@@ -78,8 +78,9 @@ sudo update-alternatives --set editor /usr/bin/code
 
 * Ajouter les dépendances nécessaires à l'installation :
 ```
-sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <eoan|bionic|xenial|buster|stretch|jessie> contrib" > /etc/apt/sources.list.d/virtualbox.list'
+sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian buster contrib" > /etc/apt/sources.list.d/virtualbox.list'
 ```
+Remplacer `buster` par la distribution concernée : `eoan`, `bionic`, `xenial`, `buster`, `stretch`, `jessie`..
 
 ```
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
