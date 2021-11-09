@@ -4,7 +4,7 @@
 
 ### Kevin Doolaeghe
 
-## Configuration du conteneur `penguin`
+## Initialisation du conteneur `penguin`
 
 ### Configuration de base
 
