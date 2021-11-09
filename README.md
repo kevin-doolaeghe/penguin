@@ -41,7 +41,9 @@ sudo passwd root
 nano ~/.bashrc
 ```
 
-* Installer `vscode` :
+## Installer Visual Studio Code :
+
+* Ajouter les dépendences suffisantes pour l'installation :
 ```
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
@@ -49,6 +51,7 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/p
 rm -f packages.microsoft.gpg
 ```
 
+* Installer `vscode` :
 ```
 sudo apt install apt-transport-https
 sudo apt update
@@ -58,4 +61,22 @@ sudo apt install code
 * Ouvrir les fichiers avec Visual Studio Code par défaut :
 ```
 sudo update-alternatives --set editor /usr/bin/code
+```
+
+# Installer Oracle VM VirtualBox :
+
+* Ajouter les dépendances nécessaires à l'installation :
+```
+deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <distribution> contrib
+```
+
+```
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+```
+
+* Installer `virtualbox` :
+```
+sudo apt-get update
+sudo apt-get install virtualbox-6.1
 ```
