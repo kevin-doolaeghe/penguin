@@ -4,7 +4,9 @@
 
 ### Kevin Doolaeghe
 
-## Configuration de base du conteneur `penguin`
+## Configuration du conteneur `penguin`
+
+### Configuration de base
 
 * Mettre à jour le conteneur :
 ```
@@ -38,10 +40,19 @@ sudo passwd root
 
 * Modifier les paramètres du shell :
 ```
+sudo nano /etc/sudoers.d/kevin-nopasswd
+```
+
+```
+kevin ALL=(ALL) NOPASSWD: ALL
+```
+
+* Modifier les paramètres du shell :
+```
 nano ~/.bashrc
 ```
 
-## Installer Visual Studio Code :
+### Installer Visual Studio Code
 
 * Ajouter les dépendences suffisantes pour l'installation :
 ```
@@ -63,7 +74,7 @@ sudo apt install code
 sudo update-alternatives --set editor /usr/bin/code
 ```
 
-# Installer Oracle VM VirtualBox :
+### Installer Oracle VM VirtualBox
 
 * Ajouter les dépendances nécessaires à l'installation :
 ```
