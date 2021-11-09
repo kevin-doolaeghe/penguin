@@ -67,7 +67,7 @@ sudo update-alternatives --set editor /usr/bin/code
 
 * Ajouter les dépendances nécessaires à l'installation :
 ```
-deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <distribution> contrib
+sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <eoan|bionic|xenial|buster|stretch|jessie> contrib" > /etc/apt/sources.list.d/virtualbox.list'
 ```
 
 ```
